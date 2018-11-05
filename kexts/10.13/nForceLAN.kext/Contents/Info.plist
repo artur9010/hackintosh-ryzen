@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>nForceLAN</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.nvidia.driver.nForceLAN</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>nForceLAN</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>0.62.14</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>nForce LAN Driver</key>
+		<dict>
+			<key>AutoNegotiation</key>
+			<true/>
+			<key>CFBundleIdentifier</key>
+			<string>com.nvidia.driver.nForceLAN</string>
+			<key>CrossoverDetection</key>
+			<true/>
+			<key>DisableMSI</key>
+			<false/>
+			<key>DisableTimerIRQ</key>
+			<false/>
+			<key>IOClass</key>
+			<string>nForceLAN</string>
+			<key>IOKitDebug</key>
+			<integer>0</integer>
+			<key>IOMatchCategory</key>
+			<string>nForce LAN</string>
+			<key>IOPCIPrimaryMatch</key>
+			<string>0x01c310de 0x006610de 0x00d610de 0x008610de 0x008c10de 0x00e610de 0x00df10de 0x005610de 0x005710de 0x003710de 0x003810de 0x026810de 0x026910de 0x037210de 0x037310de 0x03e510de 0x03e610de 0x03ee10de 0x03ef10de 0x045010de 0x045110de 0x045210de 0x045310de 0x054c10de 0x054d10de 0x054e10de 0x054f10de 0x07dc10de 0x07dd10de 0x07de10de 0x07df10de 0x076010de 0x076110de 0x076210de 0x076310de 0x0ab010de 0x0ab110de 0x0ab210de 0x0ab310de</string>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+			<key>IOResourceMatch</key>
+			<string>IOKit</string>
+			<key>LogLevel</key>
+			<integer>0</integer>
+			<key>LowPowerSpeed</key>
+			<true/>
+			<key>OptimizationMode</key>
+			<integer>0</integer>
+			<key>RXRingSize</key>
+			<integer>512</integer>
+			<key>TXRingSize</key>
+			<integer>1024</integer>
+		</dict>
+	</dict>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.iokit.IONetworkingFamily</key>
+		<string>1.4.3</string>
+		<key>com.apple.iokit.IOPCIFamily</key>
+		<string>1.6</string>
+		<key>com.apple.kpi.bsd</key>
+		<string>8.0</string>
+		<key>com.apple.kpi.iokit</key>
+		<string>8.0</string>
+		<key>com.apple.kpi.libkern</key>
+		<string>8.0</string>
+		<key>com.apple.kpi.mach</key>
+		<string>8.0</string>
+		<key>com.apple.kpi.unsupported</key>
+		<string>8.0</string>
+	</dict>
+</dict>
+</plist>
