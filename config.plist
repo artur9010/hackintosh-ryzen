@@ -348,6 +348,54 @@
 				RYTJD5XAD7bAweAJRAnYRA==
 				</data>
 			</dict>
+			<dict>
+				<key>Find</key>
+				<data>
+				IfKB+gAAAg==
+				</data>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				IfKB+gAAEQ==
+				</data>
+			</dict>
+			<dict>
+				<key>Find</key>
+				<data>
+				0QAAAIP5AQ==
+				</data>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				0QAAAIP5EA==
+				</data>
+			</dict>
+			<dict>
+				<key>Find</key>
+				<data>
+				g718////Dw==
+				</data>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				g718////Hw==
+				</data>
+			</dict>
+			<dict>
+				<key>Find</key>
+				<data>
+				g32MEA==
+				</data>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
+				<key>Replace</key>
+				<data>
+				g32MGw==
+				</data>
+			</dict>
 		</array>
 	</dict>
 	<key>RtVariables</key>
