@@ -15,6 +15,23 @@
 			</dict>
 			<key>Name</key>
 			<string>DSDT.aml</string>
+			<key>Patches</key>
+			<array>
+				<dict>
+					<key>Comment</key>
+					<string>AZAL to HDEF</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					QVpBTA==
+					</data>
+					<key>Replace</key>
+					<data>
+					SERFRg==
+					</data>
+				</dict>
+			</array>
 		</dict>
 		<key>HaltEnabler</key>
 		<true/>
@@ -37,7 +54,7 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<string>Detect</string>
+			<string>1</string>
 			<key>ResetHDA</key>
 			<true/>
 		</dict>
@@ -76,6 +93,66 @@
 		<true/>
 		<key>KextsToPatch</key>
 		<array>
+			<dict>
+				<key>Comment</key>
+				<string>t1-10.8-AppleHDA-Realtek-ALC887</string>
+				<key>Find</key>
+				<data>
+				ixnUEQ==
+				</data>
+				<key>Name</key>
+				<string>com.apple.driver.AppleHDA</string>
+				<key>Replace</key>
+				<data>
+				hwjsEA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>t1-AppleHDA-Resources-xml&gt;zml-(cloverALC-all_codecs)</string>
+				<key>Find</key>
+				<data>
+				eG1sLnps
+				</data>
+				<key>Name</key>
+				<string>com.apple.driver.AppleHDA</string>
+				<key>Replace</key>
+				<data>
+				em1sLnps
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>t1-10.12-AppleHDA-Realtek-ALC...(cloverALC-all_codecs)</string>
+				<key>Find</key>
+				<data>
+				ihnUEQ==
+				</data>
+				<key>MatchOS</key>
+				<string>10.12.x,10.13.x,10.14.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.AppleHDA</string>
+				<key>Replace</key>
+				<data>
+				AAAAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>t1-10.11-AppleHDA-Realtek-ALC...(cloverALC-all_codecs)</string>
+				<key>Find</key>
+				<data>
+				gxnUEQ==
+				</data>
+				<key>MatchOS</key>
+				<string>10.11.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.AppleHDA</string>
+				<key>Replace</key>
+				<data>
+				AAAAAA==
+				</data>
+			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>IONVMeFamily Pike R. Alpha Patch#1</string>
@@ -346,6 +423,114 @@
 				<key>Replace</key>
 				<data>
 				RYTJD5XAD7bAweAJRAnYRA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>native usb</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				IfKB+gAAAg==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				IfKB+gAAEQ==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>native usb</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				0QAAAIP5AQ==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				0QAAAIP5EA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>native usb</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g718////Dw==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				g718////Hw==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>native usb</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g32MEA==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
+				<key>Replace</key>
+				<data>
+				g32MGw==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>add 1022 vendor id (breaks nvdia hdmi)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AhAAAHR7Pd4QAAAPhVMB
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>AppleHDAController</string>
+				<key>Replace</key>
+				<data>
+				IhAAAHR7PQIQAAAPhHAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>hardcoding 1022 1457 </string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				hoA+Og==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>AppleHDAController</string>
+				<key>Replace</key>
+				<data>
+				IhBXFA==
 				</data>
 			</dict>
 		</array>

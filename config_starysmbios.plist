@@ -39,7 +39,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>npci=0x2000 busratio=34 -v -radoff</string>
+		<string>-v -radoff npci=0x2000</string>
 		<key>DefaultLoader</key>
 		<string>boot.efi</string>
 		<key>DefaultVolume</key>
@@ -54,7 +54,7 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>2</integer>
+			<string>1</string>
 			<key>ResetHDA</key>
 			<true/>
 		</dict>
@@ -96,14 +96,10 @@
 			<dict>
 				<key>Comment</key>
 				<string>t1-10.8-AppleHDA-Realtek-ALC887</string>
-				<key>Disabled</key>
-				<false/>
 				<key>Find</key>
 				<data>
 				ixnUEQ==
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>Name</key>
 				<string>com.apple.driver.AppleHDA</string>
 				<key>Replace</key>
@@ -114,14 +110,10 @@
 			<dict>
 				<key>Comment</key>
 				<string>t1-AppleHDA-Resources-xml&gt;zml-(cloverALC-all_codecs)</string>
-				<key>Disabled</key>
-				<false/>
 				<key>Find</key>
 				<data>
 				eG1sLnps
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>Name</key>
 				<string>com.apple.driver.AppleHDA</string>
 				<key>Replace</key>
@@ -132,14 +124,10 @@
 			<dict>
 				<key>Comment</key>
 				<string>t1-10.12-AppleHDA-Realtek-ALC...(cloverALC-all_codecs)</string>
-				<key>Disabled</key>
-				<false/>
 				<key>Find</key>
 				<data>
 				ihnUEQ==
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>MatchOS</key>
 				<string>10.12.x,10.13.x,10.14.x</string>
 				<key>Name</key>
@@ -152,14 +140,10 @@
 			<dict>
 				<key>Comment</key>
 				<string>t1-10.11-AppleHDA-Realtek-ALC...(cloverALC-all_codecs)</string>
-				<key>Disabled</key>
-				<false/>
 				<key>Find</key>
 				<data>
 				gxnUEQ==
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
 				<key>MatchOS</key>
 				<string>10.11.x</string>
 				<key>Name</key>
@@ -567,33 +551,31 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>09/17/2018</string>
+		<string>08/08/17</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MP61.88Z.0125.B00.1809171517</string>
+		<string>MP51.88Z.0084.B00.1708080528</string>
 		<key>Board-ID</key>
-		<string>Mac-F60DEB81FF30ACF6</string>
+		<string>Mac-F221BEC8</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>F5K7445014NFHDDJC</string>
+		<string>XA0480HFC295I</string>
 		<key>BoardType</key>
 		<integer>11</integer>
 		<key>BoardVersion</key>
-		<string>1.0</string>
+		<string>1.2</string>
 		<key>ChassisAssetTag</key>
 		<string>Pro-Enclosure</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
-		<string>0x02</string>
-		<key>EfiVersion</key>
-		<string>127.0.0.0.0</string>
+		<string>0x07</string>
 		<key>Family</key>
 		<string>MacPro</string>
 		<key>FirmwareFeatures</key>
-		<string>0xE80FE137</string>
+		<string>0xE80FE136</string>
 		<key>FirmwareFeaturesMask</key>
 		<string>0xFF1FFF3F</string>
 		<key>LocationInChassis</key>
@@ -603,20 +585,18 @@
 		<key>Mobile</key>
 		<false/>
 		<key>PlatformFeature</key>
-		<string>0x04</string>
+		<string>0xFFFF</string>
 		<key>ProductName</key>
-		<string>MacPro6,1</string>
+		<string>MacPro5,1</string>
 		<key>SerialNumber</key>
-		<string>F5KVMYYLF9VM</string>
-		<key>SmUUID</key>
-		<string>37B5811F-35DE-4F1A-9925-FEAC11A17100</string>
+		<string>XA0494P0HFC</string>
 		<key>Version</key>
-		<string>1.0</string>
+		<string>1.2</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>CustomUUID</key>
-		<string>164FCEE4-5913-5B3A-9385-B4D98DCD348B</string>
+		<string>31433142-3044-3743-4539-4143FFFFFFFF</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 		<key>InjectSystemID</key>
